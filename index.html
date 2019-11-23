@@ -9,137 +9,586 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+    <img class="w3-image"
+        src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80"
+        alt="Me" width="1500" height="600">
+    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+        <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="font-family: 'Yeon Sung', cursive;">Annick
+            Francine </h1>
+        <h5 class="w3-hide-large" style="white-space:nowrap" style="font-family: 'Yeon Sung', cursive;">Annick
+            Francine </h5>
+        <h3 class="w3-hide-medium w3-hide-small" style="font-family: 'Yeon Sung', cursive;"> SOFTWARE DEVELOPER</h3>
+    </div>
+
+    <!-- Navbar (placed at the bottom of the header image) -->
+    <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+        <a href="#" class="w3-bar-item w3-button" style="font-family: 'Yeon Sung', cursive; font-size: 20px;">Home</a>
+        <a href="#about" class="w3-bar-item w3-button" style="font-family: 'Yeon Sung', cursive ;font-size: 20px">About
+            me</a>
+        <a href="#portfolio" class="w3-bar-item w3-button"
+            style="font-family: 'Yeon Sung', cursive;font-size: 20px">Projects</a>
+        <a href="#contact" class="w3-bar-item w3-button"
+            style="font-family: 'Yeon Sung', cursive;font-size: 20px">skills</a>
+
+    </div>
+
+</header>
+
+<br>
+<br>
 
 
 <body>
 
-    <!-- Header -->
-    <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-        <img class="w3-image"
-            src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-            alt="Me" width="1500" height="600">
-        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="font-family: 'Yeon Sung', cursive;">Annick Francine </h1>
-            <h5 class="w3-hide-large" style="white-space:nowrap" style="font-family: 'Yeon Sung', cursive;">Annick Francine </h5>
-            <h3 class="w3-hide-medium w3-hide-small" style="font-family: 'Yeon Sung', cursive;"> SOFTWARE DEVELOPER</h3>
-        </div>
-
-        <!-- Navbar (placed at the bottom of the header image) -->
-        <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-            <a href="#" class="w3-bar-item w3-button" style="font-family: 'Yeon Sung', cursive;">Home</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" style="font-family: 'Yeon Sung', cursive;">Projects</a>
-            <a href="#contact" class="w3-bar-item w3-button" style="font-family: 'Yeon Sung', cursive;">Contact</a>
-            <a href="#about" class="w3-bar-item w3-button" style="font-family: 'Yeon Sung', cursive;">About me</a>
-        </div>
-    </header>
-
-    <!-- Navbar on small screens -->
-    <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-        <div class="w3-bar w3-light-grey">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#about" class="w3-bar-item w3-button">About me</a>
-            <a href="#portfolio" class="w3-bar-item w3-button">Projects</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-           
-        </div>
-    </div>
 
     <!-- About Section -->
-    <div class="w3-row w3-padding-64" id="about">
-        <div class="w3-col m1 w3-padding-large"></div>
-        <div class="w3-col m4 w3-padding-large w3-hide-small">
-            <img style="transform: rotate(90deg); border-radius: 300px;" height="200px" width="200px"
-                src="image/portofolio.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
-                height="750">
-        </div>
+    <div id="about">
 
-        <div class="w3-col m5 w3-padding-large">
+        <!------ Include the above in your HEAD tag ---------->
 
-            <p class="w3-large" style="font-family: 'Yeon Sung', cursive;">my name is Annick Francine MAJYAMBERE i am software developer, <br> i am skilled in
-                different languages including
-                HTML,CSS ,Javascript,angular and python.</p>
-
-        </div>
-        <div class="w3-col m1 w3-padding-large"></div>
-
-        <!-- <section>
-            <div class="container py-3">
-                <div class="card">
-                    <div class="row ">
-                        <div class="col-md-4">
-                            <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400"
-                                class="w-100">
-                        </div>
-                        <div class="col-md-5 ">
-                            <div class="card-block px-3">
-                                <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                                <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <a href="#" class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-
+        <div class="container portfolio">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h3 style="text-align: center;">Profile</h3>
                     </div>
                 </div>
             </div>
-        </section> -->
+            <div class="bio-info">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="bio-image">
+                                    <img src="image/annick2.jpg" alt="image" height="270px" width="270px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bio-content">
+                            <h3 style="font-family: 'Yeon Sung', cursive;">Hi there, I'm Annick Francine MAJYAMBERE</h3>
+                            <h6 style="font-family: 'Yeon Sung', cursive;">I am a fresh passionate software developer .
+                                I'm skilled at writing
+                                efficient code using different languages including
+                                HTML,CSS ,Javascript and Python. I'm a fast learner, hard worker and a good team player
+                            </h6>
+                            <p>I am always passionately curious </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end About Section -->
+
+    <br>
+    <div id="portfolio">
+
+
+        <!------ Include the above in your HEAD tag ---------->
+
+        <!-- details card section starts from here -->
+        <section class="details-card">
+                <h3 style="text-align: center; margin-top: -50px;">Projects</h3>
+            <div class="container">
+                   
+                <div class="row" style=" margin-top: 30px;">
+                    <div class="col-md-4" style="margin-bottom: 20px;">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="image/akanaName.png" alt="">
+                                <span>
+                                    <h4 style="margin-left: 30px;">Akan Name project</h4>
+                                </span>
+                            </div>
+                            <div class="card-desc">
+                                <h3></h3>
+                                <p>This project is a web application that helps to
+                                    know the Akan Name depending on the birthday and gender.
+                                </p>
+                                <h3>Technologies used</h3>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <button class="btn " style="background-color: #1ABC9C;"><a
+                                        href="https://mfannick.github.io/week2-project/"
+                                        class="btn-card">Visit</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="image/dilani.png" alt="">
+                                <span>
+                                    <h4>DILANI STUDIO</h4>
+                                </span>
+                            </div>
+                            <div class="card-desc">
+
+                                <p>This project is for designing a landing page for a fictional studio .</p>
+                                <h3>Technologies used</h3>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <button class="btn " style="background-color: #1ABC9C;"><a
+                                        href="https://github.com/mfannick/week3-project"
+                                        class="btn-card">Visit</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="image/award.png" alt="">
+                                <span>
+                                    <h4>Award web app</h4>
+                                </span>
+                            </div>
+                            <div class="card-desc">
+                                <h3></h3>
+                                <p>This is a python application for user posting their projects.
+                                    it includes the project search .</p>
+                                <h3>Technologies used</h3>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Django </li>
+                                    <li>Bootstrap</li>
+
+                                </ul>
+                                <button class="btn " style="background-color: #1ABC9C;"><a
+                                        href="https://anniaward.herokuapp.com/" class="btn-card">Visit</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="image/gallery.png" alt="">
+                                <span>
+                                    <h4>Gallery web app</h4>
+                                </span>
+                            </div>
+                            <div class="card-desc">
+
+                                <p>This is a python gallery web app. it includes search and the copy of the image link.
+                                </p>
+                                <h3>Technologies used</h3>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Django </li>
+                                    <li>Javascript</li>
+
+                                </ul>
+                                <button class="btn " style="background-color: #1ABC9C;"><a
+                                        href="https://annigallery.herokuapp.com/" class="btn-card">Visit</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="image/neighbour.png" alt="">
+                                <span>
+                                    <h4>neighbourhood app</h4>
+                                </span>
+                            </div>
+                            <div class="card-desc">
+
+                                <p>This is a python application for user's neighbourhood. s/he post something in his
+                                    neighbourhood and view different
+                                    businesses in it
+                                </p>
+                                <h3>Technologies used</h3>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Django </li>
+
+
+                                </ul>
+                                <button class="btn " style="background-color: #1ABC9C;"><a
+                                        href="https://annypost.herokuapp.com" class="btn-card">Visit</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="image/pizza.png" alt="">
+                                <span>
+                                    <h4>pizza empire app</h4>
+                                </span>
+                            </div>
+                            <div class="card-desc">
+
+                                <p>This project is for designing web application where customers order
+                                    different sizes of pizzas with one or more toppings.</p>
+                                <h3>Technologies used</h3>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <button class="btn " style="background-color: #1ABC9C;"><a
+                                        href="https://mfannick.github.io/week4-project/index.html"
+                                        class="btn-card">Visit</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <br>
+    <br>
+    <div class="skillss" id="contact">
+        <div class="container portfolio">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2 style="text-align: center;font-family: 'Yeon Sung', cursive;">Skills</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bio-info">
+                <div class="row">
+
+                    <div class="col-md-8">
+                        <div class="bio-content">
+
+                            <div style="font-family: 'Yeon Sung', cursive;">
+                                <p>HTML</p>
+                                <div class="myskills">
+                                    <div class="skills html">80%</div>
+                                </div>
+
+                                <p>CSS</p>
+                                <div class="myskills">
+                                    <div class="skills css">75%</div>
+                                </div>
+
+                                <p>JavaScript</p>
+                                <div class="myskills">
+                                    <div class="skills js">65%</div>
+                                </div>
+
+                                <p>Python</p>
+                                <div class="myskills">
+                                    <div class="skills python">70%</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-    <hr>
-    <!-- Page content -->
-    <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
-
-        <!-- Images (Portfolio) -->
-        <div class="w3-card-4">
-            <img src="image/dilani.png" alt="Alps" class="w3-image" width="1000" height="500">
-            <div class="w3-container w3-center">
-                <p style="font-family: 'Yeon Sung', cursive;">Dilani studio which is a one web page for describing what id does.</p>
-            </div>
-        </div>
-        <div class="w3-card-4">
-            <img src="image/pizza.png" alt="Alps" class="w3-image w3-margin-top" width="1000" height="500">
-            <div class="w3-container w3-center">
-                <p style="font-family: 'Yeon Sung', cursive;">Pizza empire an web app for delivering pizza</p>
-            </div>
-        </div>
-        <!-- <img src="image/dilani.png" alt="dilani" class="w3-image" width="1000" height="500">
-  <img src="image/pizza.png" alt="pizza" class="w3-image w3-margin-top" width="900" height="500"> -->
-        <!-- <img src="" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500"> -->
-
-        <!-- Contact -->
-        <div class="w3-light-grey  w3-margin-top footer" id="contact">
-            <hr>
-            <div class="w3-center">
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-            </div>
-
-        </div>
-
-        <!-- End page content -->
-    </div>
 
 </body>
+<br>
+<br>
+<!-- Footer -->
+<footer class="page-footer font-small  darken-3">
+
+        <!-- Footer Elements -->
+        <div class="container">
+      
+          <!-- Grid row-->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-12 py-2">
+              <div class="mb-5 flex-center" style="margin-top: 30px;">
+      
+                <!-- Facebook -->
+                <a class="fb-ic" href="https://web.facebook.com/nyagatare.annick?ref=bookmarks" target="_blank">
+                  <i class="fab fa-facebook-f fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic" href="https://twitter.com/NYAGATAREAnnick" target="_blank">
+                  <i class="fab fa-twitter fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+               
+                <!--Linkedin -->
+                <a class="li-ic" target="_blank">
+                  <i class="fab fa-linkedin-in fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic" href="https://www.instagram.com/annickfany/?hl=en" target="_blank">
+                  <i class="fab fa-instagram fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+             
+              </div>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row-->
+      
+        </div>
+        <!-- Footer Elements -->
+      
+      
+      </footer>
+      <!-- Footer -->
+</div>
+
+
+
+
 
 </html>
 
 <style>
-    .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
-}
+    footer {
+
+        background-color: #ecf0f1;
+
+
+    }
+
+    /* body {
+        background-image: url('https://images.unsplash.com/photo-1506508618093-6fe5ce3def4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    } */
+
+
+    #Projects {
+        height: 200px;
+        background-image: linear-gradient(white, green, black);
+    }
+
+
+
+
+    .portfolio {
+        padding: 6%;
+        text-align: center;
+    }
+
+    .heading {
+        background: #fff;
+        padding: 1%;
+        text-align: left;
+        box-shadow: 0px 0px 4px 0px #545b62;
+    }
+
+    .heading img {
+        width: 10%;
+    }
+
+    .bio-info {
+        padding: 5%;
+        background: #fff;
+        box-shadow: 0px 0px 4px 0px #b0b3b7;
+    }
+
+    .name {
+        font-family: 'Yeon Sung', cursive;
+        font-weight: 600;
+    }
+
+    .bio-image {
+        text-align: center;
+    }
+
+    .bio-image img {
+        border-radius: 50%;
+    }
+
+    .bio-content {
+        text-align: left;
+    }
+
+    .bio-content p {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+
+
+
+
+    /* projects */
+
+
+
+    section {
+        padding: 100px 0;
+    }
+
+    .details-card {
+        background: #ecf0f1;
+    }
+
+    .card-content {
+        background: #ffffff;
+        border: 4px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    }
+
+    .card-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0;
+        z-index: 1;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-img span {
+        position: absolute;
+        top: 15%;
+        left: 12%;
+        background: #1ABC9C;
+        padding: 6px;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    .card-img span h4 {
+        font-size: 12px;
+        margin: 0;
+        padding: 10px 5px;
+        line-height: 0;
+    }
+
+    .card-desc {
+        padding: 1.25rem;
+    }
+
+    .card-desc h3 {
+        color: #000000;
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    .card-desc p {
+        color: #747373;
+        font-size: 14px;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0px;
+        margin-bottom: 20px;
+        padding: 0;
+        font-family: 'Yeon Sung', cursive;
+    }
+
+
+
+    a.btn-card {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #about,
+    .skillss {
+        background: linear-gradient(90deg, #e8e8e8 50%, #ecf0f1 50%);
+        font-family: 'Yeon Sung', cursive;
+    }
+
+    h3,
+    h4 {
+        font-family: 'Yeon Sung', cursive;
+    }
+
+    .myskills {
+        width: 100%;
+        background-color: #ddd;
+    }
+
+    .skills {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+
+    .html {
+        width: 80%;
+        background-color: #e8e8e8;
+        color: black;
+    }
+
+    .css {
+        width: 75%;
+        background-color: #ecf0f1;
+        color: black;
+    }
+
+    .js {
+        width: 65%;
+        background-color: #e8e8e8;
+        color: black;
+    }
+
+    .python {
+        width: 70%;
+        background-color: #ecf0f1;
+        color: black;
+    }
+
+    /* End card section */
+    /* *************** */
 </style>
+<script>
+
+
+</script>
