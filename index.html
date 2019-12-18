@@ -15,57 +15,221 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     crossorigin="anonymous">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <style>
+    /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+    #header {
+      padding: 30px 0;
+      height: 92px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      transition: all 0.5s;
+      z-index: 997;
+    }
+    #header.header-scrolled {
+      background: #1ABC9C;
+      padding: 20px 0;
+      height: 72px;
+      transition: all 0.5s;
+    }
+    #header #logo {
+      float: left;
+    }
+    #header #logo h1 {
+      font-size: 34px;
+      margin-left: 220px;
+      line-height: 1;
+      font-family: 'Source Code Pro', monospace;
+      font-weight: 700;
+      letter-spacing: 3px;
+      
+    }
+    #header #logo h1 a,
+    #header #logo h1 a:hover {
+      color: #fff;
+      padding-left: 10px;
+      border-left: 4px solid #1ABC9C;
+    }
+    #header #logo img {
+      padding: 0;
+      margin: 0;
+    }
+    /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+    /* Nav Menu Essentials */
+    .nav-menu,
+    .nav-menu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      /* position: fixed; */
+    }
+    .nav-menu ul {
+      position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      z-index: 99;
+    }
+    .nav-menu li {
+      position: relative;
+      white-space: nowrap;
+    }
+    .nav-menu>li {
+      float: left;
+    }
+    .nav-menu li:hover>ul,
+    .nav-menu li.sfHover>ul {
+      display: block;
+    }
+    .nav-menu ul ul {
+      top: 0;
+      left: 100%;
+    }
+    .nav-menu ul li {
+      min-width: 180px;
+    }
+    /* Nav Menu Arrows */
+    .sf-arrows .sf-with-ul {
+      padding-right: 30px;
+    }
+    .sf-arrows .sf-with-ul:after {
+      content: "\f107";
+      position: absolute;
+      right: 15px;
+      font-family: 'FontAwesome';
+      font-style: normal;
+      font-weight: normal;
+    }
+    .sf-arrows ul .sf-with-ul:after {
+      content: "\f105";
+    }
+    /* Nav Meu Container */
+    #nav-menu-container {
+      float: right;
+      margin: 0;
+    }
+    /* Nav Meu Styling */
+    .nav-menu a {
+      padding: 0 2px 4px 2px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      position: relative;
+    }
+    .nav-menu li:hover>a,
+    .nav-menu>.menu-active>a {
+      color: black;
+      text-decoration: none;
+    }
+    .nav-menu>li {
+      margin-left: 10px;
+    }
+    .nav-menu ul {
+      margin: 4px 0 0 0;
+      padding: 10px;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+      background: #fff;
+    }
+    .nav-menu ul li {
+      transition: 0.3s;
+    }
+    .nav-menu ul li a {
+      padding: 10px;
+      color: #333;
+      transition: 0.3s;
+      display: block;
+      font-size: 13px;
+      text-transform: none;
+    }
+    .nav-menu ul li:hover>a {
+      color: #1ABC9C;
+    }
+    .nav-menu ul ul {
+      margin: 0;
+    }
+  </style>
 
 
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluide">
 
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-    <img class="w3-image"
-        src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80"
-        alt="Me" width="1500" height="600">
-    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-        <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="font-family: 'Yeon Sung', cursive;">Annick
-            Francine </h1>
-        <h5 class="w3-hide-large" style="white-space:nowrap" style="font-family: 'Yeon Sung', cursive;">Annick
-            Francine </h5>
-        <h3 class="w3-hide-medium w3-hide-small" style="font-family: 'Yeon Sung', cursive;"> SOFTWARE DEVELOPER</h3>
-    </div>
+      
+      
 
-    <!-- Navbar (placed at the bottom of the header image) -->
-    <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-        <a href="#" class="w3-bar-item w3-button" style="font-family: 'Yeon Sung', cursive; font-size: 20px;">Home</a>
-        <a href="#about" class="w3-bar-item w3-button" style="font-family: 'Yeon Sung', cursive ;font-size: 20px">About
-            me</a>
-        <a href="#portfolio" class="w3-bar-item w3-button"
-            style="font-family: 'Yeon Sung', cursive;font-size: 20px">Projects</a>
-        <a href="#contact" class="w3-bar-item w3-button"
-            style="font-family: 'Yeon Sung', cursive;font-size: 20px">skills</a>
+      <nav id="nav-menu-container">
 
-    </div>
+        <ul class="nav-menu ">
 
-</header>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Us</a></li>
 
+        </ul>
+
+
+       
+      </nav>
+  </header><!-- #header -->
+
+</body>
+
+</html>
+  
+  <div class="banner">
+      <div class="container">
+      <div class="banner-text">
+      <!-- <div class="banner-heading" style="text-align: center;">
+            Annick
+      </div> -->
+      <div class="banner-sub-heading">
+      Annick Francine
+      </div>
+      <button type="button" class="btn text-dark btn-banner" style="background-color: #1ABC9C;">Software developer</button>
+      </div>
+      </div>
+  </div>
+
+  <!-- End header Section -->
 <br>
 <br>
 
@@ -91,7 +255,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="bio-image">
+                                <div class="bio-image porto">
                                     <img src="image/annick2.jpg" alt="image" height="270px" width="270px" />
                                 </div>
                             </div>
@@ -154,7 +318,7 @@
                     <div class="col-md-4">
                         <div class="card-content">
                             <div class="card-img">
-                                <img src="image/dilani.png" alt="">
+                                <img src="image/dilani1.png" alt="">
                                 <span>
                                     <h4>DILANI STUDIO</h4>
                                 </span>
@@ -162,6 +326,7 @@
                             <div class="card-desc">
 
                                 <p>This project is for designing a landing page for a fictional studio .</p>
+                                <br>
                                 <h3>Technologies used</h3>
                                 <ul>
                                     <li>HTML</li>
@@ -186,6 +351,7 @@
                                 <h3></h3>
                                 <p>This is a python application for user posting their projects.
                                     it includes the project search .</p>
+                                <br>
                                 <h3>Technologies used</h3>
                                 <ul>
                                     <li>Python</li>
@@ -232,14 +398,14 @@
                             </div>
                             <div class="card-desc">
 
-                                <p>This is a python application for user's neighbourhood. s/he post something in his
-                                    neighbourhood and view different
-                                    businesses in it
+                                <p>This is a python application where a user posts
+                                   view different businesses in his/her neighbourhood
                                 </p>
                                 <h3>Technologies used</h3>
                                 <ul>
                                     <li>Python</li>
                                     <li>Django </li>
+                                    <li>Bootstrap</li>
 
 
                                 </ul>
@@ -258,12 +424,13 @@
                             </div>
                             <div class="card-desc">
 
-                                <p>This project is for designing web application where customers order
+                                <p>This is a web application where customers order
                                     different sizes of pizzas with one or more toppings.</p>
                                 <h3>Technologies used</h3>
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>Javascript</li>
+                                <br>
                                 <button class="btn " style="background-color: #1ABC9C;"><a
                                         href="https://mfannick.github.io/week4-project/index.html"
                                         class="btn-card">Visit</a></button>
@@ -288,35 +455,16 @@
             </div>
             <div class="bio-info">
                 <div class="row">
-
-                    <div class="col-md-8">
-                        <div class="bio-content">
-
-                            <div style="font-family: 'Yeon Sung', cursive;">
-                                <p>HTML</p>
-                                <div class="myskills">
-                                    <div class="skills html">80%</div>
-                                </div>
-
-                                <p>CSS</p>
-                                <div class="myskills">
-                                    <div class="skills css">75%</div>
-                                </div>
-
-                                <p>JavaScript</p>
-                                <div class="myskills">
-                                    <div class="skills js">65%</div>
-                                </div>
-
-                                <p>Python</p>
-                                <div class="myskills">
-                                    <div class="skills python">70%</div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
+            <img src="image/HTMl.png" alt="Javascript" height="100px" width="90px">
+            <img src="image/css.png" alt="Javascript" height="80px" width="90px">
+            <img src="image/JS.png" alt="Javascript" height="100px" width="90px">
+            <img src="image/JQRY.png" alt="Javascript" height="100px" width="90px">
+            <img src="image/angular-js.png" alt="Javascript" height="100px" width="90px">
+            <img src="image/POST.png" alt="Javascript" height="100px" width="90px">
+            <img src="image/python.png" alt="Javascript" height="100px" width="90px">
+            <img src="image/bootstrapp.png" alt="Javascript" height="100px" width="90px">
+            <img src="image/flask.png" alt="Javascript" height="100px" width="90px">
+            <img src="image/django-logo-negative.png" alt="Javascript" height="100px" width="90px">
                 </div>
             </div>
         </div>
@@ -383,16 +531,12 @@
     footer {
 
         background-color: #ecf0f1;
+        
 
 
     }
 
-    /* body {
-        background-image: url('https://images.unsplash.com/photo-1506508618093-6fe5ce3def4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    } */
+
 
 
     #Projects {
@@ -538,11 +682,7 @@
         color: #fff;
     }
 
-    #about,
-    .skillss {
-        background: linear-gradient(90deg, #e8e8e8 50%, #ecf0f1 50%);
-        font-family: 'Yeon Sung', cursive;
-    }
+   
 
     h3,
     h4 {
@@ -574,7 +714,7 @@
     }
 
     .js {
-        width: 65%;
+        width: 70%;
         background-color: #e8e8e8;
         color: black;
     }
@@ -587,8 +727,238 @@
 
     /* End card section */
     /* *************** */
+
+
+
+
+
+
+
+
+
+
+    @import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
+.body{
+	font-family: 'Gothic A1', sans-serif;
+	font-size:16px;
+	}
+	p{
+	color:#6c6c6f;
+	font-size:1em;
+	}
+	h1,h2,h3,h4,h5,h6{color:#323233;text-transform:uppercase;}
+.navbar-brand  span{
+	color: #fed136;
+	font-size:25px;font-weight:700;letter-spacing:0.1em;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+.navbar-brand {
+	color: #fff;
+	font-size:25px;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+	font-weight:700;
+	letter-spacing:0.1em;
+}
+
+.navbar-nav .nav-item .nav-link{
+	padding: 1.1em 1em!important;
+	font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+   font-family: 'Gothic A1', sans-serif;
+}
+.navbar-nav .nav-item .nav-link:hover{color:#fed136;}
+.navbar-expand-md .navbar-nav .dropdown-menu{
+	border-top:3px solid #fed136;
+}
+.dropdown-item:hover{background-color:#fed136;color:#fff;}
+nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+	}
+    .shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: black;
+}
+.banner{
+	background-image:url('https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80');
+	text-align: center;
+    color: #fff;
+   
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.banner-text{
+	padding:200px 0 150px 0;
+    border: wheat;
+}
+.banner-heading{
+	font-family: 'Lobster', cursive;
+	font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+	color:#fff;
+}
+.banner-sub-heading{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+	color:#fff;
+}
+.btn-banner{
+	padding:5px 20px;
+	border-radius:10px;
+	font-weight:700;
+	line-height:1.5;
+	text-align:center;
+	color:#fff;
+	text-transform:uppercase;
+}
+.text-intro{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	padding-top:30px;
+}
+
+
+/* mobile view */
+@media (max-width:500px)
+{
+	.navbar-nav{
+		background-color:#000;
+		border-top:3px solid #fed136;
+		color:#fff;
+		z-index:1;
+		margin-top:5px;
+		}
+	.navbar-nav .nav-item .nav-link{
+	padding: 0.7em 1em!important;
+	font-size: 100%;
+    font-weight: 500;
+    }
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+.banner-heading{
+	font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.banner-sub-heading{
+	font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 40px;
+}
+
+}
+
+@media (max-width:768px){
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+	.banner-sub-heading{
+	font-size: 23px;
+    font-weight: 200;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+}
+ 
+ 
+
 </style>
 <script>
+	$(document).on("scroll", function(){
+		if
+      ($(document).scrollTop() > 86){
+		  $("#banner").addClass("shrink");
+		}
+		else
+		{
+			$("#banner").removeClass("shrink");
+		}
+	});
 
+
+
+
+    // Header scroll class
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+    $('#header').addClass('header-scrolled');
+  } else {
+    $('#header').removeClass('header-scrolled');
+  }
+});
+
+if ($(window).scrollTop() > 100) {
+  $('#header').addClass('header-scrolled');
+}
+
+// Smooth scroll for the menu and links with .scrollto classes
+$('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    if (target.length) {
+      var top_space = 0;
+
+      if ($('#header').length) {
+        top_space = $('#header').outerHeight();
+
+        if (! $('#header').hasClass('header-scrolled')) {
+          top_space = top_space - 20;
+        }
+      }
+
+      $('html, body').animate({
+        scrollTop: target.offset().top - top_space
+      }, 1500, 'easeInOutExpo');
+
+      if ($(this).parents('.nav-menu').length) {
+        $('.nav-menu .menu-active').removeClass('menu-active');
+        $(this).closest('li').addClass('menu-active');
+      }
+
+      if ($('body').hasClass('mobile-nav-active')) {
+        $('body').removeClass('mobile-nav-active');
+        $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+        $('#mobile-body-overly').fadeOut();
+      }
+      return false;
+    }
+  }
+});
+
+// Navigation active state on scroll
+var nav_sections = $('section');
+var main_nav = $('.nav-menu, #mobile-nav');
+var main_nav_height = $('#header').outerHeight();
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+
+  nav_sections.each(function() {
+    var top = $(this).offset().top - main_nav_height,
+        bottom = top + $(this).outerHeight();
+
+    if (cur_pos >= top && cur_pos <= bottom) {
+      main_nav.find('li').removeClass('menu-active menu-item-active');
+      main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('menu-active menu-item-active');
+    }
+  });
+});
 
 </script>
